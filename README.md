@@ -1,7 +1,5 @@
-🎮 Tic Tac Toe Game  
-
-A simple and interactive Tic Tac Toe game built using **[Technology – e.g., Python / HTML, CSS, JavaScript / Java Swing]**.  
-This project focuses on implementing game logic, handling win/draw conditions, and providing a smooth user experience.  
+🎮 Tic Tac Toe Game
+A simple and interactive Tic Tac Toe game that implements core game logic, win/draw detection, and smooth user interactions for an engaging gameplay experience.  
 
 
 
