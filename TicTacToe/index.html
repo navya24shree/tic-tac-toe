@@ -3,53 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Tic Tac Toe Game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="stars"></div>
+    <h1>🎮 Tic Tac Toe</h1>
     
-    <h1>Hacked</h1>
-    
-    <div id="usernameform">
-            <form id="user-names" action="">
-                <input id="player1" class="player" type="text" placeholder="Enter name of Player1" required>
-                <input id="player2" class="player" type="text" placeholder="Enter name of Player2" required>
-                <button id="submit" >Submit</button>
+    <div id="usernameform" class="form-container">
+            <form id="user-names" class="form-content">
+                <h2>Welcome to the Game!</h2>
+                <p class="form-subtitle">Enter your names to begin</p>
+                <input id="player1" class="player" type="text" placeholder="Player 1 Name" required>
+                <input id="player2" class="player" type="text" placeholder="Player 2 Name" required>
+                <button id="submit" class="submit-btn">Start Game</button>
             </form>
-            
     </div>
     
-    <div id="container">
-        <div id="placeholders">
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        
+    <div id="container" class="game-wrapper">
+        <div id="scoreboard" class="scoreboard-top">
+            <div class="player-score player1-score">
+                <span class="player-name" id="player1-name">Player 1</span>
+                <span id="player1-score" class="player-num">0</span>
+            </div>
+            <div class="vs-text">VS</div>
+            <div class="player-score player2-score">
+                <span class="player-name" id="player2-name">Player 2</span>
+                <span id="player2-score" class="player-num">0</span>
+            </div>
+        </div>
 
-    </div>
-    <div id="button-navs">
-        <button id="reset">Reset game</button>
-        <button id="new-game">New game</button>
+        <div id="placeholders" class="game-board">
+            <button class="box" data-index="0"></button>
+            <button class="box" data-index="1"></button>
+            <button class="box" data-index="2"></button>
+            <button class="box" data-index="3"></button>
+            <button class="box" data-index="4"></button>
+            <button class="box" data-index="5"></button>
+            <button class="box" data-index="6"></button>
+            <button class="box" data-index="7"></button>
+            <button class="box" data-index="8"></button>
+        </div>
 
-    </div>
-    <div id="scoreboard">
-  <div class="player-score">
-    <span class="player-name" id="player1-name">navya</span>
-    <span id="player1-score" class="player-num">0</span>
-  </div>
-  <div class="player-score">
-    <span  class="player-name" id="player2-name">di</span>
-    <span id="player2-score" class="player-num">0</span>
-  </div>
-</div>
-
-
+        <div id="button-navs" class="button-nav-group">
+            <button id="reset" class="btn btn-reset">🔄 Reset</button>
+            <button id="new-game" class="btn btn-new">🆕 New Game</button>
+        </div>
     </div>
    
     
